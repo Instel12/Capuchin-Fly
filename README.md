@@ -1,5 +1,5 @@
 # Capuchin-Fly
-Capuchin Fly is a fly mod for the game Capuching on PCVR (standalone will not work)
+Capuchin Fly is a fly mod for the game Capuchin on PCVR (standalone will not work)
 # Requierments
 [Caputilla](https://github.com/MonkyGT/Caputilla/releases/latest)
 [BepInEx 6.0.0 IL2CPP](https://github.com/BepInEx/BepInEx/releases/download/v6.0.0-pre.2/BepInEx-Unity.IL2CPP-win-x64-6.0.0-pre.2.zip)
