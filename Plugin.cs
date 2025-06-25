@@ -2,22 +2,17 @@
 using BepInEx.Unity.IL2CPP;
 using UnityEngine;
 using UnityEngine.XR;
+using CapuchinTemplate;
+
+[assembly: MelonInfo(typeof(Plugin), "Fly", "1.0.0", "instel")]
 
 namespace CapuchinTemplate
 {
-    [BepInPlugin("instel.fly", "Fly", "1.0.0")]
-    public class Plugin : BasePlugin
-    {
-        public override void Load()
-        {
-            AddComponent<PluginBehaviour>();
-        }
-    }
-
-    public class PluginBehaviour : MonoBehaviour
+    public class Plugin : MelonMod
     {
         bool ismodded = false;
-        void Start()
+        
+        public override void OnInitializeMelon()
         {
             Caputilla.CaputillaManager.Instance.OnModdedJoin += OnJoinedModded;
             Caputilla.CaputillaManager.Instance.OnModdedLeave += OnLeaveModded;
@@ -33,7 +28,7 @@ namespace CapuchinTemplate
             ismodded = false;
         }
 
-        void Update()
+        public override void OnUpdate()
         {
             if (ismodded)
             {
