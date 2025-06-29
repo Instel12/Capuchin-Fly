@@ -1,4 +1,3 @@
-# I HATE FUCKING MELON LOADER BUT CMC IS SWITCHING TO IT
 # Capuchin-Fly
 Capuchin Fly is a fly mod for the game Capuchin on PCVR (standalone will not work)
 # Requierments
